@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan Sahu | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Fullscreen Loader -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+  </div>
+
+  <!-- Navbar from first code -->
+  <header class="navbar-wrap">
+    <div class="brand-left">
+      <span class="brand-name">Aryan</span>
+    </div>
+
+    <nav class="navbar glass">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <!-- <li><a href="#tools" class="nav-link">Tools</a></li> -->
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="brand-right">
+      <div class="logo">
+        <img src="assets/Logo.png" alt="logo" />
+      </div>
+    </div>
+
+    <!-- Right: Hamburger Icon (Mobile Only) -->
+    <div class="hamburger-menu" onclick="toggleMobileNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Menu (Only for small screens) -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <!-- <li><a href="#tools" class="nav-link">Tools</a></li> -->
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <!-- Using the grid layout from second code, with div1..div10 -->
+  <div class="parent">
+    <div class="div1">
+      <!-- Greeting Card -->
+      <section id="home" class="card card-horizontal glass" data-card="1">
+        <div class="mini-logo">
+          <img src="assets/Mini-logo.png" alt="mini-logo" />
+        </div>
+        <div class="greet-block">
+          <div class="chat-bubble">
+            <h2 id="greeting"></h2>
+          </div>
+          <p class="brief">Hi, I'm <span id="my-name">Aryan,</span> A Front-end web developer from Prayagraj,
+            India. Focused on crafting clean, responsive, and intuitive web experiences.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="div2">
+      <!-- Location -->
+      <section class="card card-square glass" data-card="2">
+        <div class="map-container"
+          onclick="window.open('https://www.google.com/maps/place/Prayagraj,+Uttar+Pradesh', '_blank')">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8223795788927!2d81.8261608937082!3d25.444201165296114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acb8e69839167%3A0xcb44c0021ca7a6f0!2sPrayagraj%20Jn.%20Turntable!5e0!3m2!1sen!2sus!4v1758454665866!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" style="border:0;" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+    </div>
+
+    <div class="div3">
+      <!-- Skills / About -->
+      <section id="about" class="card card-vertical glass" data-card="3">
+        <div class="tech-stacks">
+          <!-- <h3>Tech Stacks</h3> -->
+          <div class="stack-columns">
+            <div class="stack-col">
+              <img src="assets/HTML.png" alt="HTML" title="HTML">
+              <img src="assets/CSS.png" alt="CSS" title="CSS">
+              <img src="assets/JavaScript.png" alt="JavaScript" title="JavaScript">
+            </div>
+            <div class="stack-col">
+              <img src="assets/React.png" alt="React" title="React">
+              <img src="assets/Tailwind CSS.png" alt="Tailwind" title="Tailwind">
+              <img src="assets/GSAP.png" alt="GSAP" title="GSAP">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="div4">
+      <!-- Appearance / Theme Toggle -->
+      <div class="container card card-square">
+        <label class="toggle">
+          <input id="switch" class="input" type="checkbox" aria-label="Toggle dark mode" />
+
+          <!-- Moon Icon -->
+          <div class="icon icon--moon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+            </svg>
+          </div>
+
+          <!-- Sun Icon -->
+          <div class="icon icon--sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5" />
+              <g stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="4" />
+                <line x1="12" y1="20" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" />
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="4" y2="12" />
+                <line x1="20" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" />
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" />
+              </g>
+            </svg>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="div5">
+      <!-- Social media -->
+      <section class="card card-square glass" data-card="5" id="social-card">
+        <div class="social-box">
+          <a id="socialLink" href="#" target="_blank">
+            <img id="socialIcon" src="" alt="Social Icon">
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="div6">
+      <!-- Projects -->
+      <section id="projects" class="card card-vertical glass" data-card="6">
+        <!-- <h3 class="card-title">Projects</h3> -->
+        <ul class="projects">
+          <li class="project">
+            <div class="proj-name">Portfolio</div>
+            <a href="index.html" target="_blank" class="proj-icon">
+              <img src="assets/Redirect.png" alt="Redirect" />
+            </a>
+          </li>
+          <li class="project">
+            <div class="proj-name">&nbsp;</div>
+            <a href="#" target="_blank" class="proj-icon">
+              <!-- <img src="assets/Redirect.png" alt="Redirect" /> -->
+            </a>
+          </li>
+          <li class="project">
+            <div class="proj-name">&nbsp;</div>
+            <a href="#" target="_blank" class="proj-icon">
+              <!-- <img src="assets/Redirect.png" alt="Redirect" /> -->
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="div7">
+      <!-- Tools used -->
+      <section id="tools" class="card card-rect glass" data-card="8">
+        <!-- <h3 class="card-title toolbox-title">Toolbox</h3> -->
+        <ul class="tools">
+          <li><img src="assets/VScode.png" alt="VS Code" title="VS Code" /></li>
+          <li><img src="assets/Chatgpt.webp" alt="Chatgpt" title="Chatgpt" /></li>
+          <li><img src="assets/Vite.png" alt="Vite" title="Vite" /></li>
+          <li><img src="assets/GitHub2.png" alt="GitHub" title="GitHub" /></li>
+          <li><img src="assets/Git.png" alt="Git" title="Git" /></li>
+          <li><img src="assets/Vercel.png" alt="Vercel" title="Vercel" /></li>
+
+        </ul>
+
+        <a href="#" class="tool-btn" onclick="event.preventDefault();">Tools</a>
+      </section>
+    </div>
+
+    <div class="div8">
+      <!-- CTA -->
+      <section class="card card-horizontal-large glass" data-card="7" id="cta-card">
+        <div class="cta-left">
+          <h3 class="card-title">🚧 Work in Progress...</h3>
+          <!-- <a class="button primary" href="mailto:hello@bob.dev">Email me</a> -->
+        </div>
+      </section>
+    </div>
+
+    <div class="div9">
+      <!-- Extra / div if needed -->
+      <section class="card card-square glass" data-card="9">
+        <h3 class="card-title">🚧 Work in Progress...</h3>
+        <!-- <p>Stay tuned for updates and possibly a blog section.</p> -->
+      </section>
+    </div>
+
+    <div class="div10">
+      <!-- Extra / div if needed -->
+      <section class="card card-square glass" data-card="10">
+        <h3 class="card-title">🚧 Work in Progress...</h3>
+        <!-- <p>Email: hello@bob.dev</p> -->
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
