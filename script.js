@@ -1,12 +1,12 @@
 // Wait until page is loaded (Page Loader)
 window.addEventListener("load", function () {
-  // 3 seconds timeout
+  // 1.5 seconds timeout
   setTimeout(function () {
     // Hide the loader
     document.getElementById("loader").style.display = "none";
     // Show the main content
-    document.getElementById("main-content").style.display = "block";
-  }, 3000);
+    // document.getElementById("main-content").style.display = "block";
+  }, 1500);
 });
 
 // Navebar active border
@@ -66,7 +66,7 @@ applySavedTheme();
 const socials = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/aryan-sahu--",
+    url: "https://www.linkedin.com/in/aryansahu30",
     icon: "assets/LinkedIn.png",
   },
   {
