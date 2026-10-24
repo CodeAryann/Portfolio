@@ -11,7 +11,7 @@ html,
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #1E201E;
+  background-color: #1e201e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,6 @@ html,
 }
 
 @keyframes abox2 {
-
   0%,
   12.5%,
   25% {
@@ -158,30 +157,31 @@ html,
 }
 
 :root {
-  --bg: #1E201E;
-  --card: #1E201E;
+  --bg: #1e201e;
+  --card: #1e201e;
   --text: #e6eaf2;
   --muted: #fdb99b;
   --accent: #7c5cff;
   --accent-2: #21d4fd;
-  --shadow: 9.91px 9.91px 15px rgba(0, 0, 0, 0.6),
+  --shadow:
+    9.91px 9.91px 15px rgba(0, 0, 0, 0.6),
     -9.91px -9.91px 15px rgba(255, 255, 255, 0.05);
   --link-color: var(--muted);
   /* dark mode link color */
-  --name-color: #C5FF95;
+  --name-color: #c5ff95;
 }
 
 :root[data-theme="light"] {
   --bg: #d2dbee;
   --card: #d2dbee;
   --text: #12151a;
-  --muted: #7B4019;
+  --muted: #7b4019;
   --accent: #5b43f7;
   --accent-2: #0bbbdc;
   --shadow: 9.91px 9.91px 15px #bfc7d9, -9.91px -9.91px 15px #e5efff;
   --link-color: var(--muted);
   /* light mode link color */
-  --name-color: #1A5319;
+  --name-color: #1a5319;
 }
 
 /* Anchor tag style - theme aware */
@@ -211,7 +211,13 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, ui-sans-serif, Arial,
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    ui-sans-serif,
+    Arial,
     sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -290,7 +296,9 @@ body {
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 20px;
-  transition: background 0.25s, transform 0.15s;
+  transition:
+    background 0.25s,
+    transform 0.15s;
   letter-spacing: 1px;
 
   /* Gradient text */
@@ -307,7 +315,6 @@ body {
   padding: 3px 20px;
   background-color: var(--card);
   box-shadow: var(--shadow);
-
 }
 
 /* Grid container (div1..div10 layout) */
@@ -322,7 +329,7 @@ body {
 }
 
 /* Div boxes styling base */
-.parent>div {
+.parent > div {
   /* Remove fixed padding so content fits */
   padding: 20px;
   margin: 0;
@@ -694,11 +701,11 @@ html[data-theme="dark"] .icon--sun {
 /* ---- Project section ---- */
 .projects {
   list-style: none;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 
 .project {
@@ -712,7 +719,17 @@ html[data-theme="dark"] .icon--sun {
   transition: transform 0.3s ease;
 }
 
+#projects .card-title {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-family: "Playwrite HR Lijeva", cursive;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
 .proj-name {
+  font-size: 15px;
   font-weight: 600;
   font-family: "Playwrite HR Lijeva", cursive;
   letter-spacing: 1px;
@@ -720,8 +737,8 @@ html[data-theme="dark"] .icon--sun {
 }
 
 .proj-icon img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -732,7 +749,8 @@ html[data-theme="dark"] .icon--sun {
 
 .proj-icon:hover img {
   transform: scale(1.05);
-  filter: brightness(0) saturate(100%) invert(36%) sepia(82%) saturate(748%) hue-rotate(230deg) brightness(95%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(75%) sepia(100%) saturate(2000%)
+    hue-rotate(65deg) brightness(105%) contrast(105%);
 }
 
 /* ---- Toolbox ---- */
@@ -855,7 +873,6 @@ html[data-theme="dark"] .icon--sun {
   font-size: 1rem;
   color: var(--text);
 }
-
 
 /* ---------- Responsive (Mobile Only) ---------- */
 @media (max-width: 720px) {
@@ -997,7 +1014,6 @@ html[data-theme="dark"] .icon--sun {
   /* 👇 brand-right overwrite for mobile */
   .brand-right {
     justify-content: flex-start;
-
   }
 }
 
@@ -1005,10 +1021,8 @@ html[data-theme="dark"] .icon--sun {
   padding: 10px;
 } */
 
-
 /* ---------- Desktop / Tablet Only ---------- */
 @media (min-width: 721px) {
-
   .mobile-nav,
   .hamburger-menu {
     display: none !important;
