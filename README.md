@@ -31,20 +31,17 @@
 
 ## 🖼️ Screenshots
 
-<table>
-  <tr>
-    <th align="center">☀️ Light Mode</th>
-    <th align="center">🌙 Dark Mode</th>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="screenshots/light-mode.png" alt="Portfolio Light Mode" width="100%" />
-    </td>
-    <td width="50%">
-      <img src="screenshots/dark-mode.png" alt="Portfolio Dark Mode" width="100%" />
-    </td>
-  </tr>
-</table>
+### ☀️ Light Mode
+
+<p align="center">
+  <img src="screenshots/light-mode.png" alt="Portfolio Light Mode" width="800" />
+</p>
+
+### 🌙 Dark Mode
+
+<p align="center">
+  <img src="screenshots/dark-mode.png" alt="Portfolio Dark Mode" width="800" />
+</p>
 
 ## 🛠️ Built With
 
